@@ -17,7 +17,7 @@ jobs:
 
     - run: |
         docker build . -t djsregistry.azurecr.io/keycloak:${{ github.sha }}
-        docker push mycontainer.azurecr.io/keycloak:${{ github.sha }}     
+        docker push djsregistry.azurecr.io/keycloak:${{ github.sha }}     
 
     - uses: azure/webapps-deploy@v2
       with:
